@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+root{
+    color: #5f727f;
+}
+#backToTop {
+    display: none; /* إخفاء الزر افتراضيًا */
+    position: fixed;
+    bottom: 20px; /* المسافة من الأسفل */
+    left: 20px; /* المسافة من اليسار */
+    background-color: #DA6912;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 99;
+    /* scroll-behavior: smooth; */
+}
+
+#backToTop:hover {
+    background-color: #DA6912;
+}
+
+.navbar{
+    display: flex;
+    box-shadow: 0 0.2px 5px 0;
+    position: sticky !important; 
+    justify-content: space-between;
+
+}
+.page{
+    position: sticky !important;
+}
+
+.navbar-end{
+    display: flex;
+    
+    margin: 0.5em 4em 0;
+    padding: 0;
+}
+
+/* .branch1{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: rgb(131, 129, 129);
+
+} */
+/* .nav-a{
+    position: relative;
+    transition: 0.3s;
+    --webkit-animation: 0.3s;
+    --moz-animation: 0.3s;
+    -o-transition: 0.5s;
+    padding: 0 10px;
+}
+.nav-a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 90%;
+    background: #DA6912;
+    bottom: 33px;
+
+}
+.nav-a:hover{
+    color: w
+} */
+.navbar-item{
+    padding: 5px;
+}
+/*  بداية قسم تعريف بالجمعية*/
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 1em; */
+}
+/* .img-nav{
+    margin: 0 0 2em 0;  
+} */
+.p-logo{
+    font-family: 'El Messiri';
+    /* margin: 2em 0 0 0; */
+    padding: 0;
+   
+}
+.backsec1{
+    background-color: rgba(218, 214, 214, 0.363);
+    pointer-events: stroke;
+}
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.definition{
+    text-align: end;
+    line-height: 50px;
+    
+}
+.ayeh{
+    margin: 3em;
+    width: 20em;
+    height: 20em;
+    
+}
+.main-address{
+      font-family: 'El Messiri';
+      font-size: 1.5em;
+}
+.main-ad-titl{
+    font-family: 'Cairo';
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+/* بداية القسم الثاني من نحن */
+.section2{
+    display: flex;
+    text-align: end;
+    align-items: center;
+    justify-content: center;
+    margin:  0  4em ;
+}
+.img-story{
+    width: 30em;
+    height: 30em;
+    margin: 5em;
+    align-items: center;
+    display: flex;
+    
+}
+.abut{
+    margin: 0 2em;
+}
+.main-who{
+    font-family: 'El Messiri';
+      font-size: 1.5em;
+      text-align:end;
+      margin: 1em 1em 0 0;
+      line-height: 50px;
+      color: #DA6912;
+}
+.imag:hover{
+    transform: scale(1.1);
+}
+
+.mani-text{
+    color: #DA6912;
+}
+.title-who{
+    padding: 0.5em 0.5em 2em 6em;
+    font-family: 'Cairo';
+    font-size: 0.99em;
+    
+}
+/* .pen{
+    content: '♥';
+} */
+.qeam{
+    font-family: 'Cairo';
+    
+    float: right;
+ 
+}
+.qeam > ul> li::before{
+    content: '♥';
+    /* list-style: image(ur(limge/icon/قلم-01.svg); */
+    width: 21px;
+    display: flex;
+    float: right;
+    padding: 0 0.5em;
+
+}
+
+.pensel{
+    float: right;
+    
+
+}
+.botton{
+    border-radius: 1em;
+}
+.text{
+    color: #DA6912 !important;
+    
+}
+/* start section contact */
+.Section-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+
+.card-contact {
+
+    box-shadow: 0 0 12px 10px rgb(108 108 104 / 13%);
+    margin: 1.5rem;
+    padding: 1rem;
+    width: 40rem;
+    display: flex;
+}
+
+.icon-container i {
+    font-size: 2rem;
+    background-color: #DA6912;
+    color: #ece2e2;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-container i:hover {
+    transform: scale(1.2);
+    background-color: #fafafa;
+    color: #DA6912;
+    box-shadow: 0 0 12px 10px rgba(110, 109, 109, 0.13);
+
+}
+
+/* end section contact */
+.section3{
+    background-color: rgba(218, 214, 214, 0.363);
+    padding:  5em 0;
+
+}
+.card{
+    line-height: 3em;
+}
+.title{
+    font-family: 'El Messiri';    
+}
+.subtitle{
+    font-family: 'Cairo';
+   
+}
+.agn-about-us{
+    position: relative;
+    padding: 135px 0 0;
+
+}
+.pur{
+    background-color: #232B56 !important; 
+    color: aliceblue !important;
+    
+}
+.purpos{
+    color: rgb(255, 255, 255) !important;
+    font-size: 0.2em;
+}
+.agrad{
+    margin: 1em 0 0 0;
+}
+.foorer{
+    
+    background-color:#232B56;
+    color: aliceblue;
+    
+}
+.title-foot{
+    color:#DA6912;
+    margin: 1em 0;
+}
+
+.foot{
+    display: flex;
+    text-align: end;  
+    justify-content: space-between;
+  
+}
+.tit{
+    margin: 2em;
+}
+.sawing{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+}
+.hr{
+    background-color: rgba(240, 248, 255, 0.336);
+    display: flex;
+    margin: 0 2em;
+    
+}
+.coll{
+    display: grid;
+    align-self: center;
+    margin: 0 3em;
+    
+}
+.scroll-top-button.visible {
+    opacity: 0.5;
+    visibility: visible;
+}
+.scroll-top-button {
+    left: 40px;
+    right: auto;
+}
+.scroll-top-button {
+    position: fixed;
+    right: 40px;
+    bottom: 35px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    line-height: 0;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.number{
+   
+    width: 100%;
+    height: 10em;
+    background-image: url(file:///C:/Users/JOOD/Desktop/project_Al_Barakh/imge/img-num.jpg) ;
+}
+
+.background-image{
+    background-color: rgba(26, 24, 24, 0.397);
+    height: 100%;
+}
+   
+/* زر للرجوع إلى الصفحة الرئيسية */
+.backtotop.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.backtotop {
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 25px;
+    margin: 0 25px 0 0;
+    z-index: 9999;
+    transition: .35s;
+    transform: scale(.7);
+    transition: all .5s;
+}
+
+
+.container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2.5rem;}
+.card-new {
+        background: #fff;
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+        transition: transform 0.5s 0.5s;
+        width: 30%;
+            /* border-top: 4px solid #007bff; */
+}
+.titl-new{
+    text-align: center;
+    color: #232B56;
+    font-family: 'Cairo';
+    font-size: 2em;
+}
+
+.new{
+    margin: 1em 0;
+}
+.content-slide{
+    display: flex;
+    justify-content: center;
+}
+.content-text{
+    text-align: end;
+}
+.swiper1 {
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.text-coll{
+    color: #DA6912 !important;
+}
+.button:hover
+{
+    transform: scale(1.1);
+}
+
+/* تبع قائمة الاعضاء */
+.swiper_image {
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+    box-sizing: border-box;
+  
+  }
+  
+  .image-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 0;
+    padding: 0;
+    
+    z-index: 1; 
+  
+     /* opacity: 0.9; */
+  
+  }
+  
+    
+  
+   .party{
+    text-align: left;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    z-index: 2;
+  
+   
+  } 
+  .image-slide::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(88, 88, 88, 0.26), rgba(88, 88, 88, 0.26));
+    z-index: 1;
+  
+  }
+  
+  .image-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border: none;
+  }
+  
+  .wrapper-image {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  
+  
+  /* للنقاط */
+  .swiper-testimoniala-pagination,
+  .swiper-image-pagination {
+    position: absolute;
+    bottom: 10px;
+  
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #000;
+  
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background:#AE835F ;
+  
+  }
+  .swiper-pagination-button-next-bullet-active {
+    opacity: 1;
+    background:#AE835F ;
+  }
